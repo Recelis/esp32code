@@ -16,7 +16,7 @@ void LEDS::setLEDs(int state){
             digitalWrite(BACKWASH_LED, LOW);
             digitalWrite(RINSE_LED, LOW);
             digitalWrite(MINERAL_BALANCED_LED, LOW);
-            digitalWrite(TANK_FULL, LOW);
+            digitalWrite(TANK_FULL_LED, LOW);
             digitalWrite(ERROR_LOW_LED, LOW);
             break;
         case BACKWASH:
@@ -24,7 +24,7 @@ void LEDS::setLEDs(int state){
             digitalWrite(BACKWASH_LED, HIGH);
             digitalWrite(RINSE_LED, LOW);
             digitalWrite(MINERAL_BALANCED_LED, LOW);
-            digitalWrite(TANK_FULL, LOW);
+            digitalWrite(TANK_FULL_LED, LOW);
             digitalWrite(ERROR_LOW_LED, LOW);
             break;
         case RINSE:
@@ -32,7 +32,7 @@ void LEDS::setLEDs(int state){
             digitalWrite(BACKWASH_LED, LOW);
             digitalWrite(RINSE_LED, HIGH);
             digitalWrite(MINERAL_BALANCED_LED, LOW);
-            digitalWrite(TANK_FULL, LOW);
+            digitalWrite(TANK_FULL_LED, LOW);
             digitalWrite(ERROR_LOW_LED, LOW);
             break;
         case MINERAL_BALANCED:
@@ -40,7 +40,7 @@ void LEDS::setLEDs(int state){
             digitalWrite(BACKWASH_LED, LOW);
             digitalWrite(RINSE_LED, LOW);
             digitalWrite(MINERAL_BALANCED_LED, HIGH);
-            digitalWrite(TANK_FULL, LOW);
+            digitalWrite(TANK_FULL_LED, LOW);
             digitalWrite(ERROR_LOW_LED, LOW);
             break;
         case TANK_FULL:
@@ -48,7 +48,7 @@ void LEDS::setLEDs(int state){
             digitalWrite(BACKWASH_LED, LOW);
             digitalWrite(RINSE_LED, LOW);
             digitalWrite(MINERAL_BALANCED_LED, LOW);
-            digitalWrite(TANK_FULL, HIGH);
+            digitalWrite(TANK_FULL_LED, HIGH);
             digitalWrite(ERROR_LOW_LED, LOW);
             break;
         default:
@@ -56,7 +56,7 @@ void LEDS::setLEDs(int state){
             digitalWrite(BACKWASH_LED, LOW);
             digitalWrite(RINSE_LED, LOW);
             digitalWrite(MINERAL_BALANCED_LED, LOW);
-            digitalWrite(TANK_FULL, LOW);
+            digitalWrite(TANK_FULL_LED, LOW);
             digitalWrite(ERROR_LOW_LED, HIGH);
             break;
     }

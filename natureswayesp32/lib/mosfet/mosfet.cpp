@@ -65,15 +65,15 @@ void Mosfet::valveControl(int state)
     digitalWrite(BACKWARD1, HIGH);  // Backward Normally Closed
     digitalWrite(BACKWARD2, HIGH); 
   }
-  // else if (state == RINSE)
-  // {
-  //   digitalWrite(FORWARD1, LOW);  // Forward Normally Closed 
-  //   digitalWrite(FORWARD2, LOW); 
-  //   digitalWrite(BACKWARD1, LOW);  // Backward Normally Closed
-  //   digitalWrite(BACKWARD2, LOW);
-  //   digitalWrite(RINSE1, HIGH); 
-  //   digitalWrite(RINSE2, HIGH);
-  // }
+  else if (state == RINSE)
+  {
+    digitalWrite(FORWARD1, LOW);  // Forward Normally Closed 
+    digitalWrite(FORWARD2, LOW); 
+    digitalWrite(BACKWARD1, LOW);  // Backward Normally Closed
+    digitalWrite(BACKWARD2, LOW);
+    digitalWrite(RINSE1, HIGH); 
+    digitalWrite(RINSE2, HIGH);
+  }
   else if(state == OFF){
     digitalWrite(FORWARD1, LOW);  // Forward Normally Closed 
     digitalWrite(FORWARD2, LOW); 
