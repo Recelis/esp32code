@@ -99,3 +99,13 @@ void Mosfet::runPump(int pumpStatus){
     digitalWrite(PUMP, HIGH);
   }
 }
+
+void Mosfet::TEST(){
+  digitalWrite(FORWARD1, HIGH);  // Forward Normally Closed 
+  digitalWrite(FORWARD2, HIGH); 
+  digitalWrite(BACKWARD1, HIGH);  // Backward Normally Closed
+  digitalWrite(BACKWARD2, HIGH);
+  digitalWrite(RINSE1, HIGH); 
+  digitalWrite(RINSE2, HIGH);
+  digitalWrite(PUMP, HIGH);
+}

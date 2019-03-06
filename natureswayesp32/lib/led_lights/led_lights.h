@@ -22,6 +22,10 @@ class LEDS {
         LEDS();
         ~LEDS(){};
         void setLEDs(int state);
+        void TEST();
+    private:
+        bool testHighState;
+        bool testLowState;
 };
 
 #endif

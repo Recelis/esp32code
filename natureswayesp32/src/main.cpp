@@ -9,7 +9,8 @@ void setup(){
 }
 
 void loop(){
-  Cont.run();
+  // Cont.run();
+  Cont.PCBTEST();
 }
 
 

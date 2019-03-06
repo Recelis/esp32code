@@ -21,6 +21,7 @@ class Control{
         Control(){};
         ~Control(){};
         void run();
+        void PCBTEST();
     private:
 };
 

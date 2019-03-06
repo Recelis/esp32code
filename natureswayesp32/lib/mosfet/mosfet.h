@@ -29,6 +29,7 @@ public:
   //Methods
 	Mosfet();
 	void run(int state);
+  void TEST();
 private:
   void valveControl(int state);
   void runPump(int pumpStatus);

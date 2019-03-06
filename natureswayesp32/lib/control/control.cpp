@@ -15,7 +15,11 @@ void Control::run(){
     delay(1000); // rough but will be roughly right, hopefully no one is actively counting!
 }
 
-
+void Control::PCBTEST(){
+    Mos.TEST();
+    POU_LEDS.TEST();
+    delay(500);
+}
 
 
 
