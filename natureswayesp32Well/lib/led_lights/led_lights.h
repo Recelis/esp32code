@@ -10,11 +10,11 @@
 #define MINERAL_BALANCED 4
 #define TANK_FULL 5
 
-#define ON_LED 23
-#define BACKWASH_LED 22
+#define ON_LED 18
+#define BACKWASH_LED 19
 #define RINSE_LED 21
-#define MINERAL_BALANCED_LED 19
-#define TANK_FULL_LED 18
+#define MINERAL_BALANCED_LED 22
+#define TANK_FULL_LED 23
 #define ERROR_LOW_LED 5 
 
 class LEDS {

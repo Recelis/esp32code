@@ -69,9 +69,9 @@ void State::setTriggerVal()
     case JUST_TURNED_ON:
         triggerVal = JUST_TRIGGER;
         break;
-    case CHECKING_SYSTEMS:
-        triggerVal = CHECKING_TRIGGER;
-        break;
+    // case CHECKING_SYSTEMS:
+    //     triggerVal = CHECKING_TRIGGER;
+    //     break;
     case BACKWASH:
         triggerVal = BACK_TRIGGER;
         break;
@@ -92,11 +92,11 @@ void State::changeState(bool triggering)
     switch (currState)
     {
     case JUST_TURNED_ON:
-        currState = CHECKING_SYSTEMS;
-        break;
-    case CHECKING_SYSTEMS:
         currState = BACKWASH;
         break;
+    // case CHECKING_SYSTEMS:
+    //     currState = BACKWASH;
+    //     break;
     case BACKWASH:
         currState = RINSE;
         break;
@@ -114,7 +114,7 @@ void State::changeState(bool triggering)
         break;
     default:
         // for any errors
-        currState = CHECKING_SYSTEMS;
+        currState = BACKWASH;
         break;
     }
 }
@@ -131,9 +131,9 @@ void State::convertStateToString()
     case JUST_TURNED_ON:
         Serial.println("JUST_TURNED_ON");
         break;
-    case CHECKING_SYSTEMS:
-        Serial.println("CHECKING_SYSTEMS");
-        break;
+    // case CHECKING_SYSTEMS:
+    //     Serial.println("CHECKING_SYSTEMS");
+    //     break;
     case BACKWASH:
         Serial.println("BACKWASH");
         break;
