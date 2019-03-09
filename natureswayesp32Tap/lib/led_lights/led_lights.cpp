@@ -19,6 +19,14 @@ void LEDS::setLEDs(int state){
             digitalWrite(TANK_FULL_LED, LOW);
             digitalWrite(ERROR_LOW_LED, LOW);
             break;
+        // case CHECKING_SYSTEMS:
+        //     digitalWrite(ON_LED, HIGH);
+        //     digitalWrite(BACKWASH_LED, LOW);
+        //     digitalWrite(RINSE_LED, LOW);
+        //     digitalWrite(MINERAL_BALANCED_LED, LOW);
+        //     digitalWrite(TANK_FULL_LED, LOW);
+        //     digitalWrite(ERROR_LOW_LED, LOW);
+        //     break;
         case BACKWASH:
             digitalWrite(ON_LED, HIGH);
             digitalWrite(BACKWASH_LED, HIGH);
