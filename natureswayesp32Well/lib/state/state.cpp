@@ -75,6 +75,9 @@ void State::setTriggerVal()
     case BACKWASH:
         triggerVal = BACK_TRIGGER;
         break;
+    case RINSE:
+        triggerVal = RINSE_TRIGGER;
+        break;
     case MINERAL_BALANCED:
         triggerVal = FORW_STAND_TRIGGER;
         break;
@@ -95,6 +98,9 @@ void State::changeState(bool triggering)
         currState = BACKWASH;
         break;
     case BACKWASH:
+        currState = RINSE;
+        break;
+    case RINSE:
         currState = MINERAL_BALANCED;
         break;
     case MINERAL_BALANCED:
@@ -130,6 +136,9 @@ void State::convertStateToString()
         break;
     case BACKWASH:
         Serial.println("BACKWASH");
+        break;
+    case RINSE:
+        Serial.println("RINSE");
         break;
     case MINERAL_BALANCED:
         Serial.println("MINERAL_BALANCED");
