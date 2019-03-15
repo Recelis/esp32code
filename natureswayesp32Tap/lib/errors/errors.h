@@ -14,6 +14,7 @@ class Errors {
         void printError();
     private:
         int error;
+        int debounceCount;
 };
 
 #endif

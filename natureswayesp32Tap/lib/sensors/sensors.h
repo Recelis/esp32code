@@ -10,7 +10,7 @@ class Sensors{
         Sensors();
         ~Sensors(){};
         bool getLowStatus();
-        bool getHighStatus();    
+        bool getHighStatus();   
 };
 
 
