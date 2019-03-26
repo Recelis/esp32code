@@ -6,13 +6,21 @@ Sensors Sens;
 
 Errors::Errors(){
     error = NO_ERROR;
+    debounceCount = 0;
 }
 
 int Errors::returnError(){
     if (Sens.getLowStatus()){
-        error = ERROR_LOW;
-        return error;
+        debounceCount++;
+        if (debounceCount >= 5){
+            error = ERROR_LOW;
+            return error;
+        } else {
+            error = NO_ERROR;
+            return error;
+        }
     } else {
+        debounceCount = 0;
         error = NO_ERROR;
         return error;
     }
