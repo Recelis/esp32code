@@ -12,11 +12,12 @@ Errors::Errors(){
 int Errors::returnError(){
     if (Sens.getLowStatus()){
         debounceCount++;
-        if (debounceCount >= 5){
+        if (debounceCount >= 30){
             error = ERROR_LOW;
             return error;
         } else {
             error = NO_ERROR;
+            Serial.println("DEBOUNCING");
             return error;
         }
     } else {
